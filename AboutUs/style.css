@@ -7,6 +7,10 @@
     height: calc(100vh - 80px);
   }
   
+  .navbar-brand .img {
+    width: 10px;
+    height: 10px;
+  }
   
   
   
