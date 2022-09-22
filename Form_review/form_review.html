@@ -14,7 +14,7 @@
 <body>
     <!-- Header -->
 
-
+  
     <nav class="navbar navbar-dark navbar-expand-md bg-success">
         <a class="navbar-brand" href="#"><img src="../Resources/Images/earth.jpg" alt="Discover Planet">Discover
             Planet</a>
@@ -32,7 +32,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success" type="submit" id="button">Search</button>
                 </form>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="form-group">
                     <label class="text-muted">Other Country</label>
-                    <input type="text" placeholder="Other" class="form-control text-muted">
+                    <input type="text" placeholder="Other" class="form-control text-muted" id="country">
                 </div>
             </div>
 
@@ -154,13 +154,15 @@
             </div>
 
             <div class="d-flex align-items-center justify-content-sm-end button-section">
-                <button class="btn btn-primary mx-4" type="submit">Submit</button>
+                <button class="btn btn-primary mx-4" id="button">Submit</button>
                 <button class="btn">Cancel</button>
             </div>
         </form>
     </div>
 
     </div>
+    <script src="../js/itemsController.js" defer></script>
+    <script src="../js/index.js" defer></script>
 </body>
 
 </html>
