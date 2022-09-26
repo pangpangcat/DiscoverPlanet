@@ -49,7 +49,7 @@ newPostFrom.addEventListener('submit', (event) => {
     newUserRecommendation.value = '';
     newUserCountry.value = 'Other Country';
     newUserCity.value = 'Other City';
-    userImageUrl.value = ''
+    userImageUrl.value = '';
 
 });
 
