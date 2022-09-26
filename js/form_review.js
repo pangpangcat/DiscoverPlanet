@@ -1,19 +1,8 @@
 const postsController = new PostsController(0);
 
-/*
-function addPostCard(post) {
-    const postHTML = '<div class="card" style="width: 20rem;">\n' +
-        '    <img src="' + post.img + '" width="300" height="250"  alt="product image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">' + post.name + '</h5>\n' + post.country + post.city + '</h5>\n'
-    '        <p class="card-text">' + post.recommendation + '</p>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-    const postsContainer = document.getElementById("list-posts");
-    postsContainer.innerHTML += postHTML;
-}
-*/
+
+
+
 
 const newPostFrom = document.querySelector('#newUserForm')
 
@@ -22,11 +11,11 @@ newPostFrom.addEventListener('submit', (event) => {
 
     const newUserName = document.querySelector("#newUserName")
     const newUserRecommendation = document.querySelector('#newUserRecommendation')
-    const newUserCountry = document.querySelector('#userCountry')
+    let newUserCountry = document.querySelector('#userCountry')
     if (newUserCountry.value == 'Other Country') {
         newUserCountry = document.querySelector('#userOtherCountry');
     }
-    const newUserCity = document.querySelector('#userCity')
+    let newUserCity = document.querySelector('#userCity')
     if (newUserCity.value == 'Other City') {
         newUserCity = document.querySelector('#userOtherCity');
     }
@@ -42,16 +31,23 @@ newPostFrom.addEventListener('submit', (event) => {
 
     postsController.addPost(userName, userCountry, userCity, recommendation, userImageUrl);
 
-    //addPostCard({ userName: userName, userCountry: userCountry, userCity: userCity, recommendation: recommendation, userImageUrl: userImageUrl })
+    /* addPostCard({ 
+        userName: userName, 
+        userCountry: userCountry, 
+        userCity: userCity, 
+        recommendation: recommendation, 
+        userImageUrl: userImageUrl })
+ */
 
+        /*
     //clear the form
     newUserNameInput.value = '';
     newUserRecommendation.value = '';
     newUserCountry.value = 'Other Country';
     newUserCity.value = 'Other City';
     userImageUrl.value = ''
-
-});
+*/
+}); 
 
 
 
