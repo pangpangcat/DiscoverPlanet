@@ -27,23 +27,34 @@ class PostsController {
 
 
     
+    loadPostsFromLocalStorage() {
+        this.posts = [];
+        const storagePosts = localStorage.getItem("posts");
+        if (storagePosts) {
+            const posts = JSON.parse(storagePosts)
+            for (var i = 0, size = posts.length; i < size; i++) {
+                const post = posts[i];
+                this.posts.push(post);
+            }
+        }
+    }
 
 
 
         loadStorageSampleData() {
               if (!localStorage.getItem("posts")) {
                 const samplePosts = [{
-                    'name': 'Yiran',
+                    'userName': 'Yiran',
                     'country': 'United States',
                     'city': 'Utah',
-                    'img': 'https://i.natgeofe.com/n/45936334-bdc9-4659-88dd-6f380d5a2b76/2030.jpg?w=636&h=477',
+                    'imageUrl': 'https://i.natgeofe.com/n/45936334-bdc9-4659-88dd-6f380d5a2b76/2030.jpg?w=636&h=477',
                     'recommendation': 'Tourist Information: Arch National Park'
                 },
                 {
-                    'name': 'Yiran',
+                    'userName': 'Yiran',
                     'country': 'United States',
                     'city': 'San Fransico',
-                    'img': 'https://a.cdn-hotels.com/gdcs/production126/d349/d2422886-1662-43cb-a356-4087bdbb59f8.jpg?impolicy=fcrop&w=800&h=533&q=medium',
+                    'imageUrl': 'https://a.cdn-hotels.com/gdcs/production126/d349/d2422886-1662-43cb-a356-4087bdbb59f8.jpg?impolicy=fcrop&w=800&h=533&q=medium',
                     'recommendation': 'Tourist Information: Yosemeti National Park'
                 }];
                 localStorage.setItem("posts", JSON.stringify(samplePosts));
