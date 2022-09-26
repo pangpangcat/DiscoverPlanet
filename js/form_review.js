@@ -1,4 +1,6 @@
 const postsController = new PostsController(0);
+alert("hello world");
+
 
 const newPostFrom = document.querySelector('#newUserForm')
 
@@ -26,7 +28,6 @@ newPostFrom.addEventListener('submit', (event) => {
 
 
     postsController.addPost(userName, userCountry, userCity, recommendation, userImageUrl);
-
 
     //clear the form
     newUserName.value = '';

@@ -40,6 +40,7 @@ class PostsController {
     }
 
 
+
         loadStorageSampleData() {
               if (!localStorage.getItem("posts")) {
                 const samplePosts = [{
