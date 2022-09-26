@@ -2,6 +2,7 @@ const postsController = new PostsController(0);
 alert("hello world");
 
 
+
 const newPostFrom = document.querySelector('#newPostForm')
 
 newPostFrom.addEventListener('submit', (event) => {
@@ -9,11 +10,11 @@ newPostFrom.addEventListener('submit', (event) => {
 
     const newUserName = document.querySelector("#newUserName")
     const newUserRecommendation = document.querySelector('#newUserRecommendation')
-    const newUserCountry = document.querySelector('#userCountry')
+    let newUserCountry = document.querySelector('#userCountry')
     if (newUserCountry.value == 'Other Country') {
         newUserCountry = document.querySelector('#userOtherCountry');
     }
-    const newUserCity = document.querySelector('#userCity')
+    let newUserCity = document.querySelector('#userCity')
     if (newUserCity.value == 'Other City') {
         newUserCity = document.querySelector('#userOtherCity');
     }
@@ -30,15 +31,20 @@ newPostFrom.addEventListener('submit', (event) => {
     postsController.addPost(userName, userCountry, userCity, recommendation, userImageUrl);
 
 
+    /* addPostCard({ 
+        userName: userName, 
+        userCountry: userCountry, 
+        userCity: userCity, 
+        recommendation: recommendation, 
+        userImageUrl: userImageUrl })
+ */
 
-    //clear the form
-    newUserName.value = '';
-    newUserRecommendation.value = '';
-    newUserCountry.value = 'Other Country';
-    newUserCity.value = 'Other City';
-    userImageUrl.value = '';
 
-});
+
+    userImageUrl.value = ''
+*/
+}); 
+
 
 
 
