@@ -42,43 +42,43 @@
     <div class="wrapper bg-white">
         <div class="h2 text-center mb-2">Travel Review</div>
         <div class="text-muted mb-2">Thank you for taking the time to fill out this online questionnaire!</div>
-        <form id="newUserForm">
+        <form id="newPostForm">
             <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
                 <div class="form-group">
-                    <label class="text-muted mandatory">Counrty</label>
-                    <select class="custom-select mr-sm-2" required id="inlineFormCustomSelect">
-                        <option selected>Country</option>
-                        <option value="1">United States</option>
-                        <option value="2">Ukraine</option>
-                        <option value="3">China</option>
+                    <label for='userCountry' class="text-muted mandatory">Counrty</label>
+                    <select id='userCountry' class="custom-select mr-sm-2" required>
+                        <option value="Other Country" selected>Other Country</option>
+                        <option value="United States">United States</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="China">China</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label class="text-muted">Other Country</label>
-                    <input type="text" placeholder="Other" class="form-control text-muted" id="country">
+                    <label for='userOtherCountry' class="text-muted">Other Country</label>
+                    <input type="text" placeholder="Other" class="form-control text-muted" id="userOtherCountry">
                 </div>
             </div>
 
             <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
                 <div class="form-group">
-                    <label class="text-muted mandatory">City</label>
-                    <select class="custom-select mr-sm-2" required id="inlineFormCustomSelect">
-                        <option selected>Country</option>
-                        <option value="1">New York</option>
-                        <option value="2">Kyiv</option>
-                        <option value="3">Beijing</option>
+                    <label for='userCity' class="text-muted mandatory">City</label>
+                    <select id='userCity' class="custom-select mr-sm-2" required>
+                        <option value="Other City" selected>Other City</option>
+                        <option value="New York">New York</option>
+                        <option value="Kyiv">Kyiv</option>
+                        <option value="Beijing">Beijing</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label class="text-muted">Other City</label>
-                    <input type="text" placeholder="Other" class="form-control text-muted">
+                    <label for='userOtherCity' class="text-muted">Other City</label>
+                    <input id='userOtherCity' type="text" placeholder="Other" class="form-control text-muted">
                 </div>
             </div>
 
             <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
                 <div class="form-group">
-                    <label for="newUserNameInput" class="text-muted mandatory">Name</label>
-                    <input type="text" required class="form-control" id="newUserNameInput">
+                    <label for="newUserName" class="text-muted mandatory">Name</label>
+                    <input type="text" required class="form-control" id="newUserName">
                 </div>
                 <div class="form-group">
                     <label class="text-muted mandatory">Email Address</label>
@@ -148,8 +148,16 @@
                 </div>
             </div>
 
+            <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
+                <div class="form-group">
+                    <label for='userImageUrl' class="text-muted mandatory">Photo sharing</label>
+                    <input id='userImageUrl' type="url" required class="form-control">
+                </div>
+            </div>
+
             <div for="newUserRecommendation"
                 class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1 mb-2">
+                <label class="text-muted mandatory">Recommendation</label>
                 <textarea class="form-control text-muted" id="newUserRecommendation" rows="5"></textarea>
             </div>
 
@@ -161,8 +169,19 @@
     </div>
 
     </div>
-    <script src="../js/itemsController.js" defer></script>
-    <script src="../js/index.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="../js/postsController.js" defer></script>
+    <script src="../js/form_review.js" defer></script>
 </body>
 
 </html>

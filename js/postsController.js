@@ -4,30 +4,38 @@ class PostsController {
         this.currentId = currentId;
     }
 
-    addPost(userName, recommendation, imageUrl) {
+    addPost(userName, country, city, recommendation, imageUrl) {
         const post = {
             id: this.currentId++,
+            country: country,
+            city: city,
             userName: userName,
             recommendation: recommendation,
             imageUrl: imageUrl
         }
 
         this.posts.push(post);
+
+        //Save posts to local storage
+        localStorage.setItem("posts", JSON.stringify(this.posts));
     }
 
-    loadPostsFromLocalStorage() {
-        const storagePosts = localStorage.getItem("posts");
-        if (storagePosts) {
-            const posts = JSON.parse(storagePosts)
-            for (var i = 0, size = posts.length; i < size; i++) {
-                const post = posts[i];
-                this.posts.push(post);
+
+    /*
+        loadPostsFromLocalStorage() {
+            const storagePosts = localStorage.getItem("posts");
+            if (storagePosts) {
+                const posts = JSON.parse(storagePosts)
+                for (var i = 0, size = posts.length; i < size; i++) {
+                    const post = posts[i];
+                    this.posts.push(post);
+                }
             }
         }
-    }
+        */
 
 }
-
+/*
 // Test code
 const posts1 = new PostsController();
 posts1.addPost('Yiran',
@@ -37,3 +45,4 @@ posts1.addPost('Yiran',
     'recommendation: Yosemeti',
     'https://a.cdn-hotels.com/gdcs/production126/d349/d2422886-1662-43cb-a356-4087bdbb59f8.jpg?impolicy=fcrop&w=800&h=533&q=medium')
 console.log(posts1);
+*/
