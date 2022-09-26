@@ -1,10 +1,9 @@
 const postsController = new PostsController(0);
+alert("hello world");
 
 
 
-
-
-const newPostFrom = document.querySelector('#newUserForm')
+const newPostFrom = document.querySelector('#newPostForm')
 
 newPostFrom.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -31,6 +30,7 @@ newPostFrom.addEventListener('submit', (event) => {
 
     postsController.addPost(userName, userCountry, userCity, recommendation, userImageUrl);
 
+
     /* addPostCard({ 
         userName: userName, 
         userCountry: userCountry, 
@@ -39,15 +39,12 @@ newPostFrom.addEventListener('submit', (event) => {
         userImageUrl: userImageUrl })
  */
 
-        /*
-    //clear the form
-    newUserNameInput.value = '';
-    newUserRecommendation.value = '';
-    newUserCountry.value = 'Other Country';
-    newUserCity.value = 'Other City';
+
+
     userImageUrl.value = ''
 */
 }); 
+
 
 
 

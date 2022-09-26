@@ -8,9 +8,9 @@ class PostsController {
     addPost(userName, country, city, recommendation, imageUrl) {
         const post = {
             id: this.currentId++,
+            userName: userName,
             country: country,
             city: city,
-            userName: userName,
             recommendation: recommendation,
             imageUrl: imageUrl
         }
@@ -25,18 +25,10 @@ class PostsController {
     }
 
 
+
     
-        loadPostsFromLocalStorage() {
-            this.posts = [];
-            const storagePosts = localStorage.getItem("posts");
-            if (storagePosts) {
-                const posts = JSON.parse(storagePosts)
-                for (var i = 0, size = posts.length; i < size; i++) {
-                    const post = posts[i];
-                    this.posts.push(post);
-                }
-            }
-        }
+
+
 
         loadStorageSampleData() {
               if (!localStorage.getItem("posts")) {
@@ -71,3 +63,4 @@ posts1.addPost('Yiran',
     'https://a.cdn-hotels.com/gdcs/production126/d349/d2422886-1662-43cb-a356-4087bdbb59f8.jpg?impolicy=fcrop&w=800&h=533&q=medium')
 console.log(posts1);
 */
+
