@@ -13,7 +13,7 @@ function addPostCard(post) {
     const postHTML = '<div class="card" style="width: 20rem;">\n' +
         '    <img src="' + post.imageUrl + '" width="300" height="250"  alt="product image">\n' +
         '    <div class="card-body">\n' +
-        '        <h5 class="card-title">' + post.name + '</h5>\n' +
+        '        <h5 class="card-title">' + post.userName + '</h5>\n' +
         '        <p class="card-text">' + post.country + ' ' + post.city + '</p>\n' +
         '        <p class="card-text">' + post.recommendation + '</p>\n' +
         '    </div>\n' +
