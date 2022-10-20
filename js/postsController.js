@@ -69,6 +69,16 @@ class PostsController {
                 'imageUrl': 'https://a.cdn-hotels.com/gdcs/production126/d349/d2422886-1662-43cb-a356-4087bdbb59f8.jpg?impolicy=fcrop&w=800&h=533&q=medium',
                 'recommendation': 'Tourist Information: Yosemeti National Park'
             });
+
+            this.posts.push(
+                {
+                    id: -3,
+                    'userName': 'Hanna',
+                    'country': 'Ukraine',
+                    'city': 'Odessa',
+                    'imageUrl': 'https://upload.wikimedia.org/wikipedia/commons/d/d6/Odessa_Opera_Theatre.jpg',
+                    'recommendation': 'Odessa National Dramatic Theater'
+                });
         
     }
 
