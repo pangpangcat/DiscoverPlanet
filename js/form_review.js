@@ -1,8 +1,5 @@
-import { PostsController } from "./postsController.mjs";
 
 const postsController = new PostsController(0);
-
-
 
 const newPostFrom = document.querySelector('#newUserForm')
 
