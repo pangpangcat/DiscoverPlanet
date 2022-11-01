@@ -1,3 +1,5 @@
+import { PostsController } from "./postsController.mjs";
+
 const postsController = new PostsController(0);
 
 
@@ -7,7 +9,7 @@ const newPostFrom = document.querySelector('#newUserForm')
 newPostFrom.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    let newUserName = document.querySelector("#newUserName")
+    let newName = document.querySelector("#newName")
     let newUserRecommendation = document.querySelector('#newUserRecommendation')
     let newUserCountry = document.querySelector('#userCountry')
     if (newUserCountry.value == 'Other Country') {
@@ -17,24 +19,24 @@ newPostFrom.addEventListener('submit', (event) => {
     if (newUserCity.value == 'Other City') {
         newUserCity = document.querySelector('#userOtherCity');
     }
-    const newUserImageUrl = document.querySelector('#userImageUrl');
+    const newUserImage_url = document.querySelector('#userImageUrl');
 
-    const userName = newUserName.value;
+    const name = newName.value;
     const userCountry = newUserCountry.value;
     const userCity = newUserCity.value;
     const recommendation = newUserRecommendation.value;
-    const userImageUrl = newUserImageUrl.value;
+    const userImage_url = newUserImage_url.value;
 
 
 
-    postsController.addPost(userName, userCountry, userCity, recommendation, userImageUrl);
+    postsController.addPost(name, userCountry, userCity, recommendation, userImage_url);
 
     //clear the form
-    newUserName.value = '';
+    newName.value = '';
     newUserRecommendation.value = '';
     newUserCountry.value = 'Other Country';
     newUserCity.value = 'Other City';
-    userImageUrl.value = ''
+    userImage_url.value = '';
 
 
 

@@ -8,12 +8,12 @@ function loadCardsListFromPostsController() {
     allPosts += "<div class='row'>";
     for (var i = 0, size = postsController.posts.length; i < size; i++) {
         const post = postsController.posts[i];
-        if(i>0 && i%3 == 0) {
+        if (i > 0 && i % 3 == 0) {
             allPosts += "</div> <div class='row'>";
         }
         allPosts += addPostCard(post);
-        if(i == size-1){
-            allPosts += "</div>"; 
+        if (i == size - 1) {
+            allPosts += "</div>";
         }
     }
 
@@ -22,22 +22,22 @@ function loadCardsListFromPostsController() {
 
 function addPostCard(post) {
     var postHTML = "";
- 
-       
-     postHTML +=
+
+
+    postHTML +=
         '<div class="card col-auto" style="margin: 5px; width: 350px">\n' +
-        '    <img src="' + post.imageUrl + '" width="300" height="250" style="padding-left: 20px;"  alt="product image">\n' +
+        '    <img src="' + post.image_url + '" width="300" height="250" style="padding-left: 20px;"  alt="product image">\n' +
         '    <div class="card-body">\n' +
-        '        <h5 class="card-title">' + post.userName + '</h5>\n' +
+        '        <h5 class="card-title">' + post.name + '</h5>\n' +
         '        <p class="card-text">' + post.country + ', ' + post.city + '</p>\n' +
         '        <p class="card-text">' + post.recommendation + '</p>\n' +
         '    </div>\n' +
         '</div>\n' +
         '';
-        
-    
+
+
     return postHTML;
-    
+
 }
 
 postsController.loadPostsFromLocalStorage();
