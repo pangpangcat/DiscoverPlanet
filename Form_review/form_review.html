@@ -15,7 +15,7 @@
     <!-- Header -->
 
 
-    <nav class="navbar navbar-dark navbar-expand-md bg-success">
+    <nav class="navbar navbar-dark navbar-expand-md">
         <a class="navbar-brand" href="#"><img src="../Resources/Images/earth.jpg" alt="Discover Planet">Discover
             Planet</a>
         <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
@@ -30,10 +30,8 @@
                     </li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="../Tips/tips.html">TIPS AND
                             ARTICLES</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../AboutUs/about.html">ABOUT
-                            US</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link"
-                            href="../AboutUs/about.html">CONTACT</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../Form_review/form_review.html">YOUR TRAVEL STORY</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="../AboutUs/about.html">CONTACT</a></li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -46,7 +44,7 @@
 
 
     <div class="wrapper bg-white">
-        <div class="h2 text-center mb-2">Travel Review</div>
+        <div class="h2 text-center mb-2">Share Your Experience</div>
         <div class="text-muted mb-2">Thank you for taking the time to fill out this online questionnaire!</div>
         <form id="newUserForm">
             <div class="d-sm-flex align-items-sm-center justify-content-sm-between pt-1">
@@ -168,7 +166,7 @@
             </div>
 
             <div class="d-flex align-items-center justify-content-sm-end button-section">
-                <button type="submit" class="btn btn-primary mx-4" id="button">Submit</button>
+                <button type="submit" class="btn btn-primary mx-4" id="button"  onclick = "window.location.href='../Tips/tips.html';">Submit</button>
                 <button class="btn">Cancel</button>
             </div>
         </form>
@@ -189,5 +187,7 @@
     <script src="../js/postsController.js" ></script>
     <script src="../js/form_review.js" ></script>
 </body>
+
+<footer><a class="footer-text" href="../AboutUs/about.html">Contact us</a></footer>
 
 </html>

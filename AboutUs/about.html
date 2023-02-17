@@ -1,172 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link href="../AboutUs/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+    <link href="../AboutUs/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Header -->
 
+    <nav class="navbar navbar-dark navbar-expand-md">
+      <a class="navbar-brand" href="#"
+        ><img
+          src="../Resources/Images/earth.jpg"
+          alt="Discover Planet"
+        />Discover Planet</a
+      >
 
-    <nav class="navbar navbar-dark navbar-expand-md bg-success">
-
-        <a class="navbar-brand" href="#"><img src="../Resources/Images/earth.jpg" alt="Discover Planet">Discover
-            Planet</a>
-
-     
-        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
-                    class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav flex-grow-1 justify-content-between">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i
-                                class="fa fa-apple apple-logo"></i></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../Destinations/destinations.html">DESTINATIONS</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../Events/events.html">EVENTS</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../Tips/tips.html">TIPS AND ARTICLES</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../AboutUs/about.html">ABOUT US</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">CONTACT</a></li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+      <div class="container">
+        <button
+          data-toggle="collapse"
+          class="navbar-toggler"
+          data-target="#navcol-1"
+        >
+          <span class="sr-only">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav flex-grow-1 justify-content-between">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="#"
+                ><i class="fa fa-apple apple-logo"></i
+              ></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="../Destinations/destinations.html"
+                >DESTINATIONS</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="../Events/events.html">EVENTS</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="../Tips/tips.html">TIPS AND ARTICLES</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="../Form_review/form_review.html"
+                >YOUR TRAVEL STORY</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" href="../AboutUs/about.html">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
+      </div>
     </nav>
 
+    <!--Section 1-->
 
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="card d-flex justify-content-center mx-auto my-3 p-5">
+            <h6 class="text-muted">INFORMATION</h6>
+            <h2>Contact Us</h2>
 
-
-
-    <!-- Section1-->
-
-
-    <!--Section 2-->
-
-
-    <div class="container">
-        <div class="row my-5">
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="../Resources/Images/hui.png">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Hui Liu</div>
-                        I am passionate about developing web applications. I love to build creative and fun website. My favorite hobbies are travelling, singing and crafting. And I am an animal lover!
-                    </div>
-                    <div class="footer">
-                        <span id="name">Hui Liu<br></span>
-                        <span id="position">Jr Web Developer <a href="https://www.linkedin.com/in/hui-l-9583a532/" target="_blank">LinkedIn</a></span>
-                    </div>
-                </div>
+            <div class="form-row">
+              <div class="form-group col-md-6 first">
+                <label for="inputFirstName">FIRST NAME <span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputFirstName"
+                  name="firstname"
+                  required
+                />
+                <div id="fname_error" class="val_error"></div>
+              </div>
+              <div class="form-group col-md-6 first">
+                <label for="inputLastName">LAST NAME <span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLastName"
+                  name="lastname"
+                />
+                <div id="lname_error" class="val_error"></div>
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="../Resources/Images/sean.jpg">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Lorem Ipsum!</div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                        Maecenas nec odio et ante tincidunt tempus
-                        Duis leo. Donec sodales sagittis magna
-                    </div>
-                    <div class="footer">
-                        <span id="name">Sean Stewart<br></span>
-                        <span id="position">Jr Web Developer <a href="#">Generation.com</a></span>
-                    </div>
-                </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail">EMAIL <span>*</span></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  name="youremail"
+                />
+                <div id="email_error" class="val_error"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPhone">PHONE <span>*</span></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputPhone"
+                  name="yourphoneno"
+                />
+                <div id="phone_error" class="val_error"></div>
+              </div>
             </div>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto ">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="../Resources/Images/sundus.JPG">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Lorem Ipsum!</div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                        Maecenas nec odio et ante tincidunt tempus
-                        Duis leo. Donec sodales sagittis magna
-                    </div>
-                    <div class="footer">
-                        <span id="name">Sundus Ahmed<br></span>
-                        <span id="position">Jr Web Developer <a href="#">Youtube.com</a></span>
-                    </div>
-                </div>
+            <div class="form-group mt-0">
+              <label for="exampleFormControlTextarea1"
+                >MESSAGE <span>*</span></label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                name="yourmessage"
+              ></textarea>
+              <div id="message_error" class="val_error"></div>
             </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1"
+                >&nbsp;&nbsp;Send me offers & updates</label
+              >
+            </div>
+            <div class="form-button pt-4">
+              <button
+                type="submit"
+                class="btn btn-primary btn-block btn-lg"
+                value="Register"
+                name="register"
+              >
+                <span>SEND MESSAGE</span>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <!--Section 2-->
 
-        <div class="row my-5">
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="../Resources/Images/yiran.JPG">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">My name is Yiran!</div>
-                        I am a Junior full stack trainee at Generation USA, passionating about building excellent software taht improves the lives of those around me. I have experience using Java, Python, JavaScript, SQL, Spring boot, Restful webservice. I'm stilling passionate about learning new programming languages and technical skills. Looking for Junior level full stack position.
-                    </div>
-                    <div class="footer">
-                        <span id="name">Yiran Han<br></span>
-                        <span id="position">Jr Web Developer <a href="https://www.linkedin.com/in/yiran-erin-han/" target="_blank">LinkedIn</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="../Resources/Images/hanna.png">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">My name is Hanna!</div>
-                        Travaling is my passion. I already visited 18 countries, but the most beautiful country is Ukraine. If you never been in Ukraine - add this country to your travel list.   
-                                            </div>
-                    <div class="footer">
-                        <span id="name">Hanna Stepanova<br></span>
-                        <span id="position">Jr Web Developer <a href=https://www.linkedin.com/in/hanna-stepanova-a1236311a>LinkedIn</a></span>                             
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card d-flex mx-auto ">
-                    <div class="card-image">
-                        <img class="img-fluid d-flex mx-auto" src="../Resources/Images/susan.jpeg">
-                    </div>
-                    <div class="card-text">
-                        <div class="card-title">Lorem Ipsum!</div>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean massa. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-                        Maecenas nec odio et ante tincidunt tempus
-                        Duis leo. Donec sodales sagittis magna
-                    </div>
-                    <div class="footer">
-                        <span id="name">Christina Williams<br></span>
-                        <span id="position">Jr Web Developer <a href="#">Youtube.com</a></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+      <div class="boxes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
 
-
     <!--Footer-->
-    <footer> <br>
-        Contact us: generation@generation.com
-    </footer>>
-
-</body>
-
+  </body>
 </html>

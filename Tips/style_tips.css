@@ -1,9 +1,24 @@
-
-
-  
-#list-posts {
-    width: 1150px;
+.navbar {
+  background-color: #69c6ba;
 }
-  
-    
-    
+
+#list-posts {
+  width: 1150px;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to top, #fff 10%, #69c6ba 90%) no-repeat;
+}
+
+footer {
+  height: 3rem;
+  background-color: #69c6ba;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.footer-text {
+  color: rgb(252, 254, 253);
+  padding: 25px 50px;
+}
