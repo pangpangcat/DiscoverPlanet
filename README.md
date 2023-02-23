@@ -1,4 +1,4 @@
-# Discover Plant
+# Discover Planet
 
 # About the project
 This is a travel blog application.
